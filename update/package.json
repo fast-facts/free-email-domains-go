@@ -1,0 +1,23 @@
+{
+  "name": "free-email-domains-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "update": "ts-node update.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "object-hash": "^3.0.0",
+    "puppeteer": "^24.1.0",
+    "puppeteer-pro": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.9",
+    "@types/object-hash": "^3.0.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
