@@ -4,7 +4,7 @@ import * as hash from 'object-hash';
 
 import { puppeteer } from './chrome';
 
-const fileLocation = '../freeemails.go';
+const fileLocation = '../list.go';
 
 void (async () => {
   const browser = await puppeteer.launch();

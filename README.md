@@ -8,7 +8,7 @@ A list of free email domains provided by [`hubspot`](https://knowledge.hubspot.c
 go get github.com/fast-facts/free-email-domains-go
 ```
 
-## Quickstart
+## Quick Start
 
 ```go
 import (
@@ -17,5 +17,6 @@ import (
 
 func main() {
  domains := freeemails.Domains
+ domains := freeemails.IsFreeDomain("test@subdomain.domain.com") // checks both subdomain.domain.com and domain.com
 }
 ```
