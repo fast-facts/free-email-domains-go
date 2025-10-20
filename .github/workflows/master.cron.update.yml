@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v4
         with:
-          node-version: latest
+          node-version: 24
 
       - run: cd ./update && npm install
       - run: cd ./update && npm run update
