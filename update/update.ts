@@ -1,4 +1,3 @@
-import axios from 'axios';
 import * as fs from 'fs';
 import * as hash from 'object-hash';
 
@@ -16,8 +15,15 @@ void (async () => {
 
   await browser.close();
 
-  const csvResponse = await axios.get<string>(link);
-  const array = csvResponse.data.split(/[,\n\r]+/g).filter(x => x.length > 0).map(x => `"${x}"`).join(', ');
+  const response = await fetch(link);
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch CSV: ${response.status}`);
+  }
+
+  const text = await response.text();
+
+  const array = text.split(/[,\n\r]+/g).filter(x => x.length > 0).map(x => `"${x}"`).join(', ');
   const data = `package freeemails\n\nvar Domains = []string{${array}}\n`;
 
   if (data.length < 100) throw new Error('Domain count too low');
