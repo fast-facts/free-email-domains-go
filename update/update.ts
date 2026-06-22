@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import * as hash from 'object-hash';
+import hash from 'object-hash';
 
 import { puppeteer } from './chrome';
 

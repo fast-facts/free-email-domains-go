@@ -10,13 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "object-hash": "^3.0.0",
-    "puppeteer": "^24.10.0",
-    "puppeteer-pro": "^2.0.0"
+    "puppeteer": "^25.1.0",
+    "puppeteer-pro": "^2.5.3"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30",
+    "@types/node": "^25.9.2",
     "@types/object-hash": "^3.0.6",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "^6.0.3"
   }
 }
