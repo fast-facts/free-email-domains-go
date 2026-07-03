@@ -14,7 +14,7 @@
     "puppeteer-pro": "^2.5.3"
   },
   "devDependencies": {
-    "@types/node": "^25.9.2",
+    "@types/node": "^25.9.3",
     "@types/object-hash": "^3.0.6",
     "tsx": "^4.22.5",
     "typescript": "^6.0.3"
