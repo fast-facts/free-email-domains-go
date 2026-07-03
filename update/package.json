@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "update": "ts-node update.ts"
+    "update": "tsx update.ts"
   },
   "author": "",
   "license": "MIT",
@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/node": "^25.9.2",
     "@types/object-hash": "^3.0.6",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.22.5",
     "typescript": "^6.0.3"
   }
 }
