@@ -1,12 +1,12 @@
 import * as fs from 'fs';
 import hash from 'object-hash';
 
-import { puppeteer } from './chrome';
+import * as chrome from './chrome';
 
 const fileLocation = '../list.go';
 
 void (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await chrome.launch();
   const page = await browser.newPage();
   await page.goto('https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature');
 
