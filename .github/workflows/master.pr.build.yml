@@ -18,6 +18,9 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
+      - run: cd ./update && npm install && npx camoufox-js fetch
+      - run: cd ./update && npm run update
+
       - uses: actions/setup-go@v6
         with:
           go-version: stable

@@ -14,5 +14,45 @@
     ],
     "rangeStrategy": "bump",
     "automerge": true,
-    "automergeType": "pr"
+    "automergeType": "pr",
+    "packageRules": [
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "matchDepTypes": [
+                "uses-with"
+            ],
+            "matchDepNames": [
+                "node"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "enabled": false
+        },
+        {
+            "matchDepTypes": [
+                "engines"
+            ],
+            "matchPackageNames": [
+                "node"
+            ],
+            "enabled": false
+        },
+        {
+            "matchPackagePatterns": [
+                "camoufox-pro",
+                "playwright-core"
+            ],
+            "groupName": "camoufox and playwright"
+        },
+        {
+            "matchPackagePatterns": [
+                "^@types/"
+            ],
+            "groupName": "types"
+        }
+    ]
 }
