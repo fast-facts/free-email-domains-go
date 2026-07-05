@@ -19,9 +19,9 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 24.17.0
+          node-version: 24
 
-      - run: cd ./update && npm install
+      - run: cd ./update && npm install && npx camoufox-js fetch
       - run: cd ./update && npm run update
 
       - run: git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
