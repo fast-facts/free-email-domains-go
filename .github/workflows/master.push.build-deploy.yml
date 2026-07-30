@@ -24,7 +24,7 @@ jobs:
       - run: cd ./update && npm install && npx camoufox-js fetch
       - run: cd ./update && npm run update
 
-      - uses: actions/setup-go@v6
+      - uses: actions/setup-go@v7
         with:
           go-version: stable
       - run: go get
