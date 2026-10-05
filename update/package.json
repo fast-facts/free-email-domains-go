@@ -8,14 +8,8 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "camoufox-pro": "^1.0.15",
-    "object-hash": "^3.0.0",
-    "playwright-core": "~1.63.0"
-  },
   "devDependencies": {
     "@types/node": "^25.9.8",
-    "@types/object-hash": "^3.0.6",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
   }
